@@ -7,34 +7,48 @@ import Skills from "@/components/Skills";
 import Achievements from "@/components/Achievements";
 import Certifications from "@/components/Certifications";
 import Contact from "@/components/Contact";
+import Sidebar from "@/components/Sidebar";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-slate-100">
-      <Hero />
+      <Sidebar />
       
-      {/* Grid Layout for Main Sections */}
-      <div className="container mx-auto px-6 py-12">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
-          <div className="space-y-12">
-            <About />
-            <Education />
-          </div>
-          <div className="space-y-12">
+      {/* Main content with left margin for sidebar */}
+      <div className="md:ml-64">
+        <section id="hero">
+          <Hero />
+        </section>
+        
+        {/* Grid Layout for Main Sections */}
+        <div className="container mx-auto px-6 py-12">
+          <section id="projects" className="mb-16">
             <Projects />
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          </section>
+          
+          <section id="skills" className="mb-16">
+            <Skills />
+          </section>
+          
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
+            <section id="achievements">
               <Achievements />
+            </section>
+            <section id="certifications">
               <Certifications />
-            </div>
+            </section>
           </div>
+          
+          <section id="education" className="mb-16">
+            <Education />
+          </section>
         </div>
+        
+        {/* Contact Section */}
+        <section id="contact">
+          <Contact />
+        </section>
       </div>
-      
-      {/* Full Width Skills Section */}
-      <Skills />
-      
-      {/* Contact Section */}
-      <Contact />
     </div>
   );
 };
