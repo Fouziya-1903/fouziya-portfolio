@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -68,6 +67,18 @@ export default {
 				lg: 'var(--radius)',
 				md: 'calc(var(--radius) - 2px)',
 				sm: 'calc(var(--radius) - 4px)'
+			},
+			perspective: {
+				'1000': '1000px',
+			},
+			transformStyle: {
+				'preserve-3d': 'preserve-3d',
+			},
+			backfaceVisibility: {
+				'hidden': 'hidden',
+			},
+			transform: {
+				'rotate-y-180': 'rotateY(180deg)',
 			},
 			keyframes: {
 				'accordion-down': {
@@ -162,5 +173,24 @@ export default {
 			}
 		}
 	},
-	plugins: [require("tailwindcss-animate")],
+	plugins: [
+		require("tailwindcss-animate"),
+		function({ addUtilities }) {
+			const newUtilities = {
+				'.perspective-1000': {
+					perspective: '1000px',
+				},
+				'.preserve-3d': {
+					transformStyle: 'preserve-3d',
+				},
+				'.backface-hidden': {
+					backfaceVisibility: 'hidden',
+				},
+				'.rotate-y-180': {
+					transform: 'rotateY(180deg)',
+				}
+			}
+			addUtilities(newUtilities)
+		}
+	],
 } satisfies Config;

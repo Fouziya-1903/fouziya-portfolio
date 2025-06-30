@@ -12,12 +12,28 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-slate-100">
       <Hero />
-      <About />
-      <Education />
-      <Projects />
+      
+      {/* Grid Layout for Main Sections */}
+      <div className="container mx-auto px-6 py-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
+          <div className="space-y-12">
+            <About />
+            <Education />
+          </div>
+          <div className="space-y-12">
+            <Projects />
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <Achievements />
+              <Certifications />
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      {/* Full Width Skills Section */}
       <Skills />
-      <Achievements />
-      <Certifications />
+      
+      {/* Contact Section */}
       <Contact />
     </div>
   );
