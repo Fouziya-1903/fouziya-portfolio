@@ -30,14 +30,13 @@ const Index = () => {
             <Skills />
           </section>
           
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
-            <section id="achievements">
-              <Achievements />
-            </section>
-            <section id="certifications">
-              <Certifications />
-            </section>
-          </div>
+          <section id="achievements" className="mb-16">
+            <Achievements />
+          </section>
+          
+          <section id="certifications" className="mb-16">
+            <Certifications />
+          </section>
           
           <section id="education" className="mb-16">
             <Education />
