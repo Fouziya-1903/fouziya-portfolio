@@ -1,29 +1,475 @@
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fouziya Shaik - AI & Data Science Portfolio</title>
-    <meta name="description" content="Professional portfolio of Fouziya Shaik - AI-driven analytics specialist and emotional intelligence researcher" />
-    <meta name="author" content="Fouziya Shaik" />
-
-    <meta property="og:title" content="Fouziya Shaik - AI & Data Science Portfolio" />
-    <meta property="og:description" content="Professional portfolio showcasing AI-driven analytics and emotional intelligence modeling expertise" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@lovable_dev" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-    
+    <meta name="description" content="Professional portfolio of Fouziya Shaik - AI-driven analytics specialist and emotional intelligence researcher">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  </head>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Mobile Menu Button -->
+    <button id="mobile-menu-btn" class="mobile-menu-btn">
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+    </button>
 
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+    <!-- Sidebar Navigation -->
+    <nav id="sidebar" class="sidebar">
+        <div class="sidebar-content">
+            <div class="sidebar-header">
+                <h2>Portfolio</h2>
+                <p>Fouziya Shaik</p>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#hero" data-section="hero"><span class="nav-icon">👤</span>Introduction</a></li>
+                <li><a href="#projects" data-section="projects"><span class="nav-icon">📁</span>Projects</a></li>
+                <li><a href="#skills" data-section="skills"><span class="nav-icon">🔧</span>Skills</a></li>
+                <li><a href="#achievements" data-section="achievements"><span class="nav-icon">🏆</span>Achievements</a></li>
+                <li><a href="#certifications" data-section="certifications"><span class="nav-icon">🎖️</span>Certifications</a></li>
+                <li><a href="#education" data-section="education"><span class="nav-icon">🎓</span>Education</a></li>
+                <li><a href="#contact" data-section="contact"><span class="nav-icon">✉️</span>Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Overlay for mobile -->
+    <div id="overlay" class="overlay"></div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-bg">
+                <div class="floating-shape shape-1"></div>
+                <div class="floating-shape shape-2"></div>
+                <div class="floating-shape shape-3"></div>
+            </div>
+            <div class="hero-content">
+                <div class="profile-image">
+                    <div class="profile-circle">
+                        <span>FS</span>
+                    </div>
+                    <div class="status-dot"></div>
+                </div>
+                <h1 class="hero-title">Fouziya Shaik</h1>
+                <div class="hero-subtitle">
+                    <span class="location-icon">📍</span>
+                    <span>AI Engineer & Data Scientist</span>
+                </div>
+                <p class="hero-location">Punjab, India</p>
+                <p class="hero-bio">
+                    Specializing in <span class="highlight-blue">AI-driven analytics</span>, 
+                    <span class="highlight-purple">emotional intelligence modeling</span>, and 
+                    <span class="highlight-pink">human-centered systems</span>. 
+                    Crafting intelligent solutions that decode behavioral signals and drive empathetic technology.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary">View My Work</button>
+                    <button class="btn btn-secondary">
+                        <span class="btn-icon">✉️</span>
+                        Get In Touch
+                    </button>
+                </div>
+                <div class="social-links">
+                    <a href="#" class="social-link" aria-label="GitHub">
+                        <span>🐙</span>
+                    </a>
+                    <a href="#" class="social-link" aria-label="LinkedIn">
+                        <span>💼</span>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Email">
+                        <span>✉️</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section projects-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2><span class="section-icon">💼</span>Projects</h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-header">
+                            <span class="project-icon">🤖</span>
+                            <div class="project-status ongoing">
+                                <div class="status-dot"></div>
+                                <span>Live</span>
+                            </div>
+                        </div>
+                        <h3>AI Companion for Emotional & Mental Well-being</h3>
+                        <p class="project-description">
+                            A personal AI assistant for journaling and wellness tracking. Analyzes patterns, 
+                            recommends personalized activities, and has a roadmap for reinforcement learning and cycle syncing.
+                        </p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Streamlit</span>
+                            <span class="tech-tag">Pandas</span>
+                            <span class="tech-tag">Matplotlib</span>
+                        </div>
+                        <div class="project-footer">
+                            <span class="project-status-text ongoing">Ongoing</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-header">
+                            <span class="project-icon">📊</span>
+                            <div class="project-accuracy">
+                                <span class="star">⭐</span>
+                                <span>Accuracy: 85%</span>
+                            </div>
+                        </div>
+                        <h3>User Purchase Intent Prediction – E-Commerce Analytics</h3>
+                        <p class="project-description">
+                            Built an ML pipeline to predict buying decisions from clickstream behavior. 
+                            Achieved 85% accuracy using session depth, time, and cart behavior.
+                        </p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Pandas</span>
+                            <span class="tech-tag">Scikit-learn</span>
+                            <span class="tech-tag">Matplotlib</span>
+                        </div>
+                        <div class="project-footer">
+                            <span class="project-status-text completed">Completed</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section skills-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Technical Skills</h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-card" data-category="programming">
+                        <div class="skill-front">
+                            <div class="skill-icon">💻</div>
+                            <h3>Programming Languages</h3>
+                            <p>Hover to see skills</p>
+                        </div>
+                        <div class="skill-back">
+                            <h3>Programming Languages</h3>
+                            <ul>
+                                <li>Python</li>
+                                <li>Java</li>
+                                <li>SQL</li>
+                                <li>R</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="skill-card" data-category="datascience">
+                        <div class="skill-front">
+                            <div class="skill-icon">📊</div>
+                            <h3>Data Science & ML</h3>
+                            <p>Hover to see skills</p>
+                        </div>
+                        <div class="skill-back">
+                            <h3>Data Science & ML</h3>
+                            <ul>
+                                <li>Pandas</li>
+                                <li>NumPy</li>
+                                <li>Scikit-learn</li>
+                                <li>Predictive Modeling</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="skill-card" data-category="visualization">
+                        <div class="skill-front">
+                            <div class="skill-icon">🎨</div>
+                            <h3>Visualization Tools</h3>
+                            <p>Hover to see skills</p>
+                        </div>
+                        <div class="skill-back">
+                            <h3>Visualization Tools</h3>
+                            <ul>
+                                <li>Power BI</li>
+                                <li>Tableau</li>
+                                <li>Microsoft Excel</li>
+                                <li>Matplotlib</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="skill-card" data-category="database">
+                        <div class="skill-front">
+                            <div class="skill-icon">🗄️</div>
+                            <h3>Database & Tools</h3>
+                            <p>Hover to see skills</p>
+                        </div>
+                        <div class="skill-back">
+                            <h3>Database & Tools</h3>
+                            <ul>
+                                <li>MySQL</li>
+                                <li>Git</li>
+                                <li>Jupyter Notebook</li>
+                                <li>Android Studio</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="skill-card" data-category="soft">
+                        <div class="skill-front">
+                            <div class="skill-icon">👥</div>
+                            <h3>Soft Skills</h3>
+                            <p>Hover to see skills</p>
+                        </div>
+                        <div class="skill-back">
+                            <h3>Soft Skills</h3>
+                            <ul>
+                                <li>Adaptability</li>
+                                <li>Communication</li>
+                                <li>Team Collaboration</li>
+                                <li>Versatility</li>
+                                <li>Persuasiveness</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Achievements Section -->
+        <section id="achievements" class="section achievements-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2><span class="section-icon">⭐</span>Achievements</h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="achievements-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Award</th>
+                                <th>Achievement</th>
+                                <th>Organization</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="award-cell">🏆</td>
+                                <td>1st Prize in SPECTRA Art Competition</td>
+                                <td>Lovely Professional University</td>
+                            </tr>
+                            <tr>
+                                <td class="award-cell">🥇</td>
+                                <td>Gold Medal in Shooting & Singing</td>
+                                <td>NCC Warangal Camp – Selected for RDC Parade</td>
+                            </tr>
+                            <tr>
+                                <td class="award-cell">🎨</td>
+                                <td>First Consolation Prize</td>
+                                <td>Hindu Young World Art Competition</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="section certifications-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2><span class="section-icon">🎖️</span>Certifications</h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="certifications-grid">
+                    <div class="cert-card">
+                        <div class="cert-header">
+                            <span class="cert-icon">🤖</span>
+                            <h3>AI & Data Analysis using Power BI</h3>
+                        </div>
+                        <div class="cert-provider">
+                            <span class="provider-icon">🏢</span>
+                            <span>Skill Nation</span>
+                        </div>
+                    </div>
+
+                    <div class="cert-card">
+                        <div class="cert-header">
+                            <span class="cert-icon">🚀</span>
+                            <h3>Emerging AI Workshop</h3>
+                        </div>
+                        <div class="cert-provider">
+                            <span class="provider-icon">🏢</span>
+                            <span>be10x</span>
+                        </div>
+                    </div>
+
+                    <div class="cert-card">
+                        <div class="cert-header">
+                            <span class="cert-icon">🗄️</span>
+                            <h3>SQL & DBMS</h3>
+                        </div>
+                        <div class="cert-provider">
+                            <span class="provider-icon">🏢</span>
+                            <span>Board Infinity</span>
+                        </div>
+                    </div>
+
+                    <div class="cert-card">
+                        <div class="cert-header">
+                            <span class="cert-icon">🏭</span>
+                            <h3>Industrial Training</h3>
+                        </div>
+                        <div class="cert-provider">
+                            <span class="provider-icon">🏢</span>
+                            <span>Heavy Water Plant</span>
+                        </div>
+                    </div>
+
+                    <div class="cert-card">
+                        <div class="cert-header">
+                            <span class="cert-icon">🎖️</span>
+                            <h3>NCC 'A' Certificate</h3>
+                        </div>
+                        <div class="cert-provider">
+                            <span class="provider-icon">🏢</span>
+                            <span>SGT Rank</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="section education-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2><span class="section-icon">🎓</span>Education</h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="education-timeline">
+                    <div class="education-card">
+                        <div class="edu-header">
+                            <span class="edu-icon">🎓</span>
+                            <h3>B.Tech in Computer Science and Engineering</h3>
+                        </div>
+                        <div class="edu-content">
+                            <h4>Lovely Professional University, Punjab</h4>
+                            <div class="edu-meta">
+                                <span class="edu-duration">📅 Since Aug 2022</span>
+                                <span class="edu-score">⭐ Score: 7.14</span>
+                            </div>
+                            <div class="edu-courses">
+                                <span class="course-tag">Data Management</span>
+                                <span class="course-tag">Tableau</span>
+                                <span class="course-tag">Computer Graphics</span>
+                                <span class="course-tag">International Business</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="education-card">
+                        <div class="edu-header">
+                            <span class="edu-icon">📡</span>
+                            <h3>Diploma in Electronics and Communication Engineering</h3>
+                        </div>
+                        <div class="edu-content">
+                            <h4>Govt. Polytechnic, Masab Tank, Telangana</h4>
+                            <div class="edu-meta">
+                                <span class="edu-duration">📅 Completed</span>
+                                <span class="edu-score">⭐ Score: 88.47%</span>
+                            </div>
+                            <div class="edu-courses">
+                                <span class="course-tag">Computer Aided Drafting</span>
+                                <span class="course-tag">Physics</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="education-card">
+                        <div class="edu-header">
+                            <span class="edu-icon">🏫</span>
+                            <h3>Matriculation</h3>
+                        </div>
+                        <div class="edu-content">
+                            <h4>Atomic Energy Central School, Telangana</h4>
+                            <div class="edu-meta">
+                                <span class="edu-duration">📅 Completed</span>
+                                <span class="edu-score">⭐ Score: 91%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Let's Connect</h2>
+                    <div class="section-line"></div>
+                    <p class="section-subtitle">Ready to collaborate on innovative AI solutions? Let's build something amazing together!</p>
+                </div>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Get In Touch</h3>
+                        <p>I'm always interested in discussing new opportunities, innovative projects, and collaborations in AI and data science. Feel free to reach out!</p>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <span class="contact-icon">✉️</span>
+                                <span>fouziya.shaik@example.com</span>
+                            </div>
+                            <div class="contact-item">
+                                <span class="contact-icon">📍</span>
+                                <span>Punjab, India</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-links">
+                        <h3>Connect With Me</h3>
+                        <div class="contact-buttons">
+                            <a href="https://linkedin.com" target="_blank" class="contact-btn linkedin">
+                                <span class="btn-icon">💼</span>
+                                <div>
+                                    <div class="btn-title">LinkedIn</div>
+                                    <div class="btn-subtitle">Professional Network</div>
+                                </div>
+                            </a>
+                            <a href="https://github.com" target="_blank" class="contact-btn github">
+                                <span class="btn-icon">🐙</span>
+                                <div>
+                                    <div class="btn-title">GitHub</div>
+                                    <div class="btn-subtitle">Code Repository</div>
+                                </div>
+                            </a>
+                            <button class="contact-btn email">
+                                <span class="btn-icon">✉️</span>
+                                <div>
+                                    <div class="btn-title">Email</div>
+                                    <div class="btn-subtitle">Direct Contact</div>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer">
+                    <p>© 2024 Fouziya Shaik. Crafted with passion for AI and innovation.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
 </html>
