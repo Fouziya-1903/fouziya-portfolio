@@ -4,7 +4,6 @@ import About from "@/components/About";
 import Education from "@/components/Education";
 import Projects from "@/components/Projects";
 import Skills from "@/components/Skills";
-import Achievements from "@/components/Achievements";
 import Certifications from "@/components/Certifications";
 import Contact from "@/components/Contact";
 import Sidebar from "@/components/Sidebar";
@@ -28,10 +27,6 @@ const Index = () => {
           
           <section id="skills" className="mb-16">
             <Skills />
-          </section>
-          
-          <section id="achievements" className="mb-16">
-            <Achievements />
           </section>
           
           <section id="certifications" className="mb-16">
